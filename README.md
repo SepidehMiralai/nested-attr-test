@@ -1,24 +1,19 @@
-# README
+# Directions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a CRUD rails app for creating recipes and their ingredients. In this app I have used `cocoon` gem to add nested attributes functionality so that it is possible to add and delete ingredients of a specific recipe in the same form that we are using to create a recipe.
 
-Things you may want to cover:
+Steps:
 
-* Ruby version
+* Created a rails app and scaffolded to create `Recipe` model, controller and views.
 
-* System dependencies
+* Generated the`Ingredient` model which belongs to `Recipe`.
 
-* Configuration
+* Added jquery using `yarn add`
 
-* Database creation
+* Added cocoon gem using `yarn add`
 
-* Database initialization
+* Made necessary configuration changes to `config/webpack/environment.js`and `javascrip[t/packs/application.js` to activate jquery and cocoon.
 
-* How to run the test suite
+* Added necessary code including a partial in views, using cocoon documentation: https://github.com/nathanvda/cocoon
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
